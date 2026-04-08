@@ -38,6 +38,10 @@ export function generateVibeStarter(idea) {
   }
 
   const cleanIdea = idea.trim();
+  if (/[\r\n]/.test(cleanIdea)) {
+    throw new Error('Idea must be provided as a single line.');
+  }
+
   const recommendedStack = recommendStack(cleanIdea);
 
   return {

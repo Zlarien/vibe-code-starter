@@ -27,3 +27,10 @@ test('generates complete starter payload from one-line app idea', () => {
 test('throws on empty idea', () => {
   assert.throws(() => generateVibeStarter('   '), /non-empty string/i);
 });
+
+test('throws when idea is multiline', () => {
+  assert.throws(
+    () => generateVibeStarter('Build an app\nWith two lines'),
+    /single line/i
+  );
+});

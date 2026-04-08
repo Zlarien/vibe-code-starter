@@ -8,5 +8,11 @@ if (!idea) {
   process.exit(1);
 }
 
-const result = generateVibeStarter(idea);
-console.log(JSON.stringify(result, null, 2));
+try {
+  const result = generateVibeStarter(idea);
+  console.log(JSON.stringify(result, null, 2));
+} catch (error) {
+  const message = error instanceof Error ? error.message : 'Unknown error';
+  console.error(`Error: ${message}`);
+  process.exit(1);
+}

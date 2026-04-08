@@ -31,6 +31,8 @@ npm install
 npm start -- "An app that helps freelancers send invoices automatically"
 ```
 
+Input must be a **single line** sentence.
+
 You get a JSON payload containing:
 - `perfectPrompt`
 - `recommendedStack`
@@ -48,7 +50,7 @@ You get a JSON payload containing:
    npm test
    ```
 3. Expected result:
-   - 2 tests pass
+   - 3 tests pass
    - 0 failures
 4. Manual validation (CLI)
    ```bash
