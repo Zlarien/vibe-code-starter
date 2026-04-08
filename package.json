@@ -1,0 +1,21 @@
+{
+  "name": "vibe-code-starter",
+  "version": "1.0.0",
+  "description": "Generate a production-ready prompt, stack recommendation, and ordered build steps from a one-line app idea.",
+  "type": "module",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/cli.js",
+    "test": "node --test",
+    "build": "node --check src/index.js && node --check src/cli.js"
+  },
+  "keywords": [
+    "vibe-coding",
+    "prompt-generator",
+    "cursor",
+    "lovable",
+    "bolt"
+  ],
+  "author": "",
+  "license": "MIT"
+}
